@@ -236,14 +236,29 @@ to extract the ERP from these stimuli. The trigger codes are
 101 and 102. The bin list will look something like this:
 
 Example:        bin 1
-                first visual stimulus
+                bin descriptor
                 .{101}
 
                 bin 2
-                second visual stimulus
+                bin descriptor
                 .{102}
 %}
                 
+
+%% Editing binlist using terminal
+
+% EEGLAB created an uneditable header in your binlist which can make it
+% difficult to analyize your behavioral data later on. This section of code removes that header
+% using macOS terminal
+
+% for this section of code, make sure you have downloaded
+% "edit_bin_list.sh" and saved it to your txtdir (NOTE: there are minor
+% instructions included within this file)
+
+% Open terminal and cd into your txtdir where the binlists have been saved
+% In terminal type sh edit_bin_list.sh
+
+
 
 %% Step 9: ERP Analysis
 
