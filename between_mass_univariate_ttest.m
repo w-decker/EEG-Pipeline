@@ -14,21 +14,15 @@
 
 % estsablish list of .erp files 
 
-fid = fopen('condition1.txt'); % list of .erp filenames of subjects in one condition
-data1 = textscan(fid,'%s%s%s');
-fclose(fid);
+data1 = readtext('condition1.txt'); % list of .erp filenames of subjects in one condition
 
-fid = fopen('condition2.txt');  % list of .erp filenames of subjects in one condition
-data2 = textscan(fid,'%s%s%s');
-fclose(fid);
+data2 = readtext('condition2.txt');  % list of .erp filenames of subjects in one condition
 
 % index cell arrays (list of .erp files)
-condition1 = data1{1:n}; % replace n with total number of .erp file names
-condition2 = data2{1:n}; % replace n with total number of .erp file names
 
 % load .erp files, convert to .GND file, save file to directory
-GND = erplab2GND(condition2, 'out_fname', 'condition1.GND'); 
-GND = erplab2GND(condition2, 'out_fname', 'condition2.GND');
+GND = erplab2GND(data1, 'out_fname', 'condition1.GND'); 
+GND = erplab2GND(data2, 'out_fname', 'condition2.GND');
 
 
 %% Converting [.gnd] files to [.grp] files
