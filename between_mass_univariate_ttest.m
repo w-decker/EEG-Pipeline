@@ -33,6 +33,6 @@ GRP = GNDs2GRP({'condition1', 'condition2.GND'}, ... % load the two .GND files c
 %% Mean time window analysis
 % tmax permutation test
 
-GRP = tmaxGRP('eeg_rhyme.GRP', 11, 'time_wind', [0 500]);
-GRP = tmaxGRP('eeg_rhyme.GRP', 12, 'time_wind', [0 500]);
+GRP = tmaxGRP('eeg.GRP', 11, 'time_wind', [300 800]);
+GRP = tmaxGRP('eeg.GRP', 12, 'time_wind', [300 800]);
  %%
