@@ -28,7 +28,7 @@ GND = erplab2GND(data2, 'out_fname', 'condition2.GND');
 %% Converting [.gnd] files to [.grp] files
 
 GRP = GNDs2GRP({'condition1', 'condition2.GND'}, ... % load the two .GND files created in the previous section
-    'create_difs', 'yes', 'out_fname', 'eeg.GRP'); 
+    'create_difs', 'yes', 'out_fname', 'eeg.GRP'); % save file as 'eeg.GRP'
 
 %% Mean time window analysis
 % tmax permutation test
