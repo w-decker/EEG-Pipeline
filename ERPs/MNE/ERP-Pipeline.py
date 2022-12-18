@@ -82,3 +82,11 @@ for proj in (False, True):
     fig.subplots_adjust(top=0.9)  # make room for title
     ref = 'Average' if proj else 'No'
     fig.suptitle(f'{ref} reference', size='xx-large', weight='bold')
+
+
+
+
+
+
+
+    
